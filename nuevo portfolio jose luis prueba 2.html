@@ -1,0 +1,484 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+	<head>
+    <html lang="es">
+<meta charset="utf-8">
+		<title>myfolio Website Template | Home :: w3layouts</title>
+		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery.min.js"></script>
+		 <!-- Custom Theme files -->
+		<link href="css/style.css" rel='stylesheet' type='text/css' />
+   		 <!-- Custom Theme files -->
+   		 <!---- start-smoth-scrolling---->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		 <!---- start-smoth-scrolling---->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+		<!----webfonts--->
+		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+		<!---//webfonts--->
+		<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+		<!----//End-top-nav-script---->
+	</head>
+	<body>
+		<!----- start-header---->
+			<div id="home" class="header">
+					<div class="top-header">
+						<div class="container">
+						<div class="logo">
+							<a href="#"><img src="images/logo.png" title="Johndeo" /></a>
+						</div>
+						<!----start-top-nav---->
+					<nav class="top-nav">
+							<ul class="top-nav">
+								<li><a href="#home" class="scroll">Perfil</a><span> </span></li>
+								<li><a href="#about" class="scroll">Sobre mi</a></li>
+								<li><a href="#services" class="scroll">Experiencia</a></li>
+								<li><a href="#competences" class="scroll">Competencias</a><span> </span></li>
+                                <li><a href="#work"class="scroll">Portfolio</a></li>
+								<li><a href="#contact" class="scroll">Contacto</a></li>
+								<div class="clearfix"> </div>
+							</ul>
+							<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
+						</nav>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+			<!----- //End-header---->
+			<!----banner---->
+		<div class="banner">
+			<img id="foto1" src="img/banner-bg.jpg" >
+            <script>
+  var imagenes = new Array();
+  imagenes=["img/banner-bg3.jpg", "img/banner-bg5.jpg", "img/banner-bg.jpg"];
+  var n_imag = imagenes.length;
+  var cont=0;
+   
+ function cambio() {
+	document.getElementById("foto1").src = imagenes[cont % n_imag];
+	cont++;
+}
+ setInterval(cambio,5000);
+
+  </script>
+            
+            	<!---- banner-info ---->
+				<div class="banner-info text-center">
+					<p>Profesional de Publicaciones </p>
+					<h1>TRAYECTORIA</h1>
+					<span>Diseño gráfico, Publicación de Páginas Web, Clasificación de Fondos</span>
+					<label> </label>
+					<div class="clearfix"> </div>
+					<a class="bannner-btn" href="#">Descubre más</a>
+				</div>
+				<!-- //banner-info ---->
+			</div>>
+			<!---- about --->
+            <br>
+            <br>
+           
+            
+			<div id="about" class="about">
+				<div class="about-head text-center">
+					<div class="container">
+						<h2>Sobre mi</h2>
+						<span> </span>
+						<p><strong>Administrativo, Documentalista, Librero, Atención al
+Cliente, Compras, Diseño gráfico, Confección y Diseño de Webs </strong><br>
+   Profesional de Publicaciones  con más de veintiun años de experiencia
+en las areas de Documentación, tareas administrativas de Compras y Lógistica, y atención al
+cliente.</p>
+					</div>
+				</div>
+				<!--- about-grids --->
+				<div class="about-grids text-center">
+					<div class="container">
+						<div class="col-md-3 about-grid">
+							<span class="light-icon"> </span>
+							<h3><a href="#">Administrativo, Documentalista</a></h3>
+							<p>- Responsable de reclamaciones a proveedores, tanto nacionales como
+extranjeros, consiguiendo reducir el tiempo de entrega de los pedidos
+mejorando así la calidad de servicio al cliente.</p>
+							<label> </label>
+						</div>
+						<div class="col-md-3 about-grid">
+							<span class="pen-icon"> </span>
+							<h3><a href="#">Librero</a></h3>
+							<p>Gran conocimiento y amplia experiencia  en libros médicos y técnicos </p>
+							<label> </label>
+						</div>
+						<div class="col-md-3 about-grid">
+							<span class="cog-icon"> </span>
+							<h3><a href="#">Creación, diseño y publicación de Webs</a></h3>
+							<p> Conocimientos en el diseño y publicación de webs, diseño responsive</p>
+							<label> </label>
+						</div>
+						<div class="col-md-3 about-grid">
+							<span class="mon-icon"> </span>
+							
+                            <h3><a href="#">Diseño Gráfico</a></h3>
+							<p>Diseño de aplicaciones multimedia, diseño de cartelería, folletos, catálogos</p>
+                            
+                            
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+				<!--- about-grids --->
+			</div>
+			<!----//about --->
+			<!--- services ---->
+			<div id="services" class="services">
+					<!---services-grids--->
+					<div class="services-grids">
+						<div class="col-md-6 services-grid-left">
+							<div class="service-head">
+								<h2>EXPERIENCIA</h2>
+								<span> </span>
+								<p>más de 20 años de experiencia en el mundo del libro y las publicaciones</p>
+							</div>
+							<!----- services-grid-left-grids ---->
+							<div class="services-grid-left-grids">
+								<div class="col-md-6 services-grid-left-grid">
+									<span> </span>
+									<h3><a href="#">Administrativo del departamento de Compras</a></h3>
+									<p><strong>Librería Díaz de Santos. Departamento de Compras y
+Logística (2005-2012)</strong>
+- Responsable de reclamaciones a proveedores, tanto nacionales como
+extranjeros, consiguiendo reducir el tiempo de entrega de los pedidos
+mejorando así la calidad de servicio al cliente.
+ Trato con proveedores, devoluciones, compras, facturas, albaranes,
+recepción y facturación de pedidos.</p>
+								</div>
+								<div class="col-md-6 services-grid-left-grid">
+									<span class="search"> </span>
+									<h3><a href="#">Documentalista</a></h3>
+									<p><strong>Librería Díaz de Santos. Departamento de
+Documentación (2004-2005).</strong>
+ Ayudante departamento Documentación.
+- Actualización de la base de datos de la empresa.
+- Búsquedas avanzadas de información, manejo de diversas bases de 
+datos.
+- Clasificación del catálogo de la empresa, elaboración de catálogos, 
+bibliografías y mailings.</p>
+								</div>
+								<div class="col-md-6 services-grid-left-grid">
+									<span class="clock"> </span>
+									<h3><a href="#">Dependiente de Librería</a></h3>
+								  <p><strong>Librería Díaz de Santos (Librería Médica y Científico
+Técnica) (1990-2004).</strong>
+ Asesoramiento a clientes, gran conocimiento de libros técnicos, médicos
+e
+informáticos.
+- Ordenación de la tienda, cuadre diario de la caja, clasificación de los
+fondos.
+- Elaboración de presupuestos para grandes cuentas (Hospitales, Cen-
+tros de Salud, Bibliotecas).
+ Seguimiento de pedidos.
+ Atención telefónica a clientes.</p>
+								</div>
+</div>
+							<!----- services-grid-left-grids ---->
+						</div>
+						<div class="col-md-6 services-grid-right">
+							
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<!---services-grids--->
+			</div>
+			<!---//services ---->
+            
+            			<div id="services" class="services">
+					<!---services-grids--->
+					<div class="services-grids">
+						<div class="col-md-6 services-grid-left">
+							<div class="service-head">
+								<h2>COMPETENCIAS</h2>
+								<span> </span>
+								<p>más de 20 años de experiencia en el mundo del libro y las publicaciones</p>
+							</div>
+							<!----- services-grid-left-grids ---->
+							<div class="services-grid-left-grids">
+								<div class="col-md-6 services-grid-left-grid">
+									<span class="clock"> </span>
+									<h3><a href="#">Ofimática (Suite Completa (Word, Excel, Access, Outlook, Powerpoint)</a></h3>
+						
+								</div>
+								<div class="col-md-6 services-grid-left-grid">
+									<span class="clock"> </span>
+									<h3><a href="#">Adobe Illustrator</a></h3>
+									
+								</div>
+                                    
+                                  
+                                    
+                                    
+                                    
+								
+								<div class="col-md-6 services-grid-left-grid">
+									<span class="clock"> </span>
+									<h3><a href="#">Adobe Photoshop</a></h3>
+
+
+						</div>
+                        
+                        
+                                 
+								</div>
+								<div class="col-md-6 services-grid-left-grid">
+									<span class="clock"> </span>
+									<h3><a href="#">Adobe Indesign</a></h3>
+
+
+						</div>
+                        
+                        
+                        
+                        
+                        
+                        
+                      
+								<div class="col-md-6 services-grid-left-grid">
+									<span class="clock"> </span>
+									 <h3><a href="#">HTML5</a></h3>
+
+						</div>
+                        
+                                               
+                        
+                        
+                        
+                        <div class="col-md-6 services-grid-left-grid">
+									<span class="clock"> </span>
+									<h3><a href="#">Microsoft Dynamics CRM</a></h3>
+
+						</div>
+                        
+                         <div class="col-md-6 services-grid-left-grid">
+									<span class="clock"> </span>
+									 <h3><a href="#">SAP Logística Usuario Final</a></h3>
+
+						</div>
+                        
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+							<!----- services-grid-left-grids ---->
+						</div>
+						<div class="col-md-6 services-grid-right2">
+							
+						</div>
+						<div class="clearfix"> </div>
+					
+					<!---services-grids--->
+			
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+			<!---- works ---->
+			<div id="work" class="works">
+				<div class="conatiner">
+					<div class="works-head text-center">
+						<h2>PORTFOLIO</h2>
+						<span> </span>
+						<p>A continuación algunos de mis trabajos realizados</p>
+					</div>
+				</div>
+					<!---works-grids--->
+					<div class="works-grids">
+						<div class="works-grid col-md-3">
+							<img src="img/kuamka2.jpg" title="name" />
+							<div class="caption">
+								<h4>Alguno de Mis trabajos realizados en el Curso "Desarrollo de productos Editoriales Multimedia"<br>
+                          <a href="https://drive.google.com/file/d/0B7Fqf-o8AjI4RC1FNms1Um9jcEU/view?usp=sh									<h3><a href="#">Revista Kuamka, num. 0</a></h3>
+       </h4>
+								<p>Mayo 2014</p>
+							</div>
+						</div>
+                        
+                        
+                        
+                        
+						<div class="works-grid col-md-3">
+							<img src="img/13historias2.jpg" title="name" />
+							
+								<div class="caption">
+								  <h4>Maquetación del epub y diseño de la portada: "13 historias en el borde"  
+                               </h4>
+								<p>Mayo 2014</p>
+							
+             </div>
+             
+                     </div>   
+                        
+                        
+                   <div class="works-grid col-md-3">
+							<img src="img/aguarena.png" title="name" />
+							
+                            
+                            <div class="caption">
+								  <h4>Creación de una aplicación digital para tablet y dispositivos móviles
+                                  "AQUARENA: Guia de las mejores playas de España" <p>Junio 2014</p>   <a href="https://drive.google.com/file/d/0B7Fqf-o8AjI4UjJUajBfVWpORnc/view?usp=sharing target="_blank" title="Revista Kuamka">AGUARENA, Guía de las mejores playas de España</a>
+                               </h4>
+							
+							</div>
+						</div>
+                       
+					
+                    
+                    
+                    
+                    
+                    						
+						<div class="works-grid col-md-3">
+							<img src="img/libros22.jpg" title="name" />
+							<div class="caption">
+								<h4>Proyecto de Pagina web para discográfica, como proyecto realizado en el certificado de profesionalidad "Confección, diseño y publicación de Páginas Web (Junio 2015)</h4>
+                                <a href="http://lawebdisco.esy.es"</a>
+								<p>lawebdisco.esy.es</p>
+							</div>
+						</div>
+                        
+                        </div>
+                        
+                        
+						
+						
+
+						
+						</div>
+				
+					<!--//works-grids--->
+				
+			</div>
+            </div>
+          
+          
+            <div class="clearfix"> </div>
+					</div>
+			<!----//works ---->
+			<!---- contact ----->
+             
+          <br>
+            <br>
+            <br>
+            <br>
+            
+            
+            
+			<div id="contact" class="contact">
+				<div class="conatiner">
+					<div class="contact-head text-center">
+							<h2>CONTACTA CONMIGO</h2>
+							<span> </span>
+							<p>No dudes en contactar conmigo si necesitas hacer alguna web, diseñar un cartel, tarjeta, o una aplicación para el movil </p>
+					</div>
+				</div>
+				<!----Contact-form---->
+				<div class="Contact-form">
+					<div class="send-form text-center">
+						<form>
+							<span class="text-box1">
+								<label>Nombre:</label>
+								<input type="text" value="escribe aqui tu nombre" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your name';}">
+							</span>
+							<span class="text-box2">
+								<label>EMAIL:</label>
+								<input type="text" value="escrube aqui tu email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your Email';}">
+							</span>
+							<span class="text-box3">
+								<label>Mensaje</label>
+								<textarea>Escribe aqui tu mensaje</textarea>
+							</span>
+							<div class="clearfix"> 
+							<input type="submit" value="Submit" />
+						</form>
+					</div>
+				</div>
+				<!----Contact-form---->
+			</div>
+			<!----//contact ----->
+			<!----copy-right---->
+			<div class="copy-right text-center">
+				<div class="container">
+					<p>Template by <a href="#">W3layouts</a></p>
+					<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+					</script>
+					<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+				</div>
+			</div>
+			<!---//copy-right---->
+	</body>
+</html>
+
